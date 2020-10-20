@@ -37,7 +37,6 @@ colors:
   padding: 0; 
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-
   /* overriding browser defaults: */ 
   box-sizing: border-box;
   display: block;
@@ -51,10 +50,8 @@ colors:
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  
   position: relative; /* makes elements "see it" when setting absolute positioning  */
   display: flex; 
-
   background-color: #f2f2f2;
 }
 
@@ -64,12 +61,10 @@ colors:
  /* need to set the specific size; this will be reused in the footer except with a different image */
   width: 154px;
   height: 31px;
-  
 }
 
 .logo_place_header { /*  modifier for the header logo */ 
   /* specific styles for the header version, including order, padding, positioning */
-
   position: absolute;
   top: 30px;
   left: 64px;
@@ -85,11 +80,9 @@ colors:
   display: inline-block;
   width: 730px;
   align-self: center;
-
   line-height: 96px;
   font-weight: bold;
   font-size: 102px;
-
   margin: 0 0 0 64px;
 }
 
@@ -100,13 +93,11 @@ colors:
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
-
   position: absolute;
   z-index: 5; /* in front of everything else except for the logo */ 
   width: 388px;
   bottom: 30px;
   left: 64px;
-
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -115,7 +106,6 @@ colors:
 .header__link {
   /*overriding browser defaults: */
   cursor: pointer;
-
   text-decoration: none;
   color: #2f80ed;
   display: block; /*  puts it on its own line */ 
@@ -128,7 +118,6 @@ colors:
   position: absolute;
   width: 765px;
   height: 608px;
-
   bottom: 0;
   right: 0;
   z-index: 1;
@@ -137,11 +126,9 @@ colors:
 .header__square-pic {
   /*overriding browser defaults: */
   display: block;
-
   position: absolute;
   height: 568px;
   width: 568px;
-
   background-color: #2f80ed;
   right: 0;
   top: 64px;
@@ -172,13 +159,11 @@ colors:
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
-
   width: 175px;
   line-height: 1.2; 
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed; 
-
   margin: 0;
   padding: 0;
 }
@@ -191,7 +176,6 @@ colors:
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-
   margin: 0;
   padding: 0;
 }
@@ -233,7 +217,6 @@ colors:
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
-
   margin: 0 auto 20px auto;
   width: 60%;
   text-align: center;
@@ -249,15 +232,12 @@ colors:
   margin-inline-end: 0;
   margin-inline-start: 0;
   display: block;
-
   width: 60%;
   margin: 0 auto 60px auto;
   text-align: center;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-
-
 }
 /* using ULs to make the whole thing instead of an actual table, table formatting turned out to be a nightmare */
 
@@ -268,22 +248,17 @@ colors:
   margin-inline-start: 0;
   margin-inline-end: 0;
   padding-inline-start: 0;
-
   margin: 0 auto;
-
   width: 1100px;
   display: flex;
   flex-wrap: wrap;
-
   list-style: none;
-
 }
 
 .table__cell {
   /* overriding browser defaults: */
   text-align: left;
   display: list-item;
-
   min-width: 250px;
   width: 250px;
   margin: 0 auto;
@@ -300,9 +275,7 @@ colors:
   margin-inline-start: 0;
   margin-inline-end: 0;
   display: block;
-
   margin-bottom: 20px;
-
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
@@ -315,7 +288,6 @@ colors:
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
-
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -334,7 +306,6 @@ colors:
 .feynman {
   /*overriding browser defaults: */
   display: block;
-
   height: 790px;
   background-color:#f2f2f2;
   position: relative; /* is this required? in order to do z-index? I think yes */
@@ -349,7 +320,6 @@ colors:
   margin-inline-end: 0;
   margin: 0 auto 70px auto; 
   display: block;
-
   position: relative; /* Allows me to put it in front of the feynman image */
   padding-top: 100px;
   line-height: 1.15;
@@ -357,9 +327,7 @@ colors:
   font-weight: bold;
   width: 775px;
   text-align: center;
-
   z-index: 2;
-
 }
 
 .feynman__subtitle {
@@ -369,7 +337,6 @@ colors:
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
-
   position: relative; /* Allows me to put it in front of the feynman image */
   margin: 0 auto;
   line-height: 51px;
@@ -377,7 +344,6 @@ colors:
   font-weight: normal;
   text-align: center;
   z-index: 2;
-
 }
 
 .feynman__link {
@@ -385,7 +351,6 @@ colors:
   color: black;
   cursor: pointer;
   text-decoration: none;
-
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -398,7 +363,6 @@ colors:
 .feynman__image {
   /* overriding browser defaults: */
   border-style: none;
-
   position: absolute;
   bottom: 0;
   left: 0; 
@@ -415,14 +379,11 @@ colors:
 .kaufman {
   /*overriding browser defaults: */
   display: block; 
-
   overflow: hidden;
   background-color: #1f1f1f;
   position: relative;
   z-index: -1;
   padding-bottom: 90px; 
-
-
 }
 
 .section-title_theme_dark {
@@ -468,7 +429,6 @@ colors:
   height: 877px;
   top: 0;
   right: -210px;
-
 }
 
 /* end Kaufman section code */
@@ -481,7 +441,6 @@ colors:
   background-color: #1f1f1f;
   padding-top: 60px;
   padding-bottom: 90px;
-
   color: white;
 }
 
@@ -503,7 +462,6 @@ colors:
   margin-inline-start: 0;
   margin-inline-end: 0;
   padding-inline-start: 0;
-
   flex-direction: column;
   justify-content: space-between;
   flex-basis: 711px;
@@ -532,7 +490,6 @@ colors:
   margin-inline-start: 0;
   margin-inline-end: 0;
   text-align: left;
-
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -559,7 +516,6 @@ colors:
   margin-inline-start: 0;
   margin-inline-end: 0;
   text-align: left;
-
   line-height: 45px;
   font-size: 18px;
   font-weight: bold;
@@ -572,7 +528,6 @@ colors:
   cursor: pointer;
   display: list-item;
   text-align: left;
-
   text-decoration: none;
   line-height: 30px;
   font-size: 18px;
