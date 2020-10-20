@@ -37,7 +37,7 @@ colors:
   padding: 0; 
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  /* overriding browser defaults: */ 
+  /* overriding browser defaults: */
   box-sizing: border-box;
   display: block;
 
@@ -51,7 +51,7 @@ colors:
   min-height: 600px;
   max-height: 756px;
   position: relative; /* makes elements "see it" when setting absolute positioning  */
-  display: flex; 
+  display: flex;
   background-color: #f2f2f2;
 }
 
@@ -94,7 +94,7 @@ colors:
   margin-inline-start: 0;
   margin-inline-end: 0;
   position: absolute;
-  z-index: 5; /* in front of everything else except for the logo */ 
+  z-index: 5; /* in front of everything else except for the logo */
   width: 388px;
   bottom: 30px;
   left: 64px;
@@ -108,7 +108,7 @@ colors:
   cursor: pointer;
   text-decoration: none;
   color: #2f80ed;
-  display: block; /*  puts it on its own line */ 
+  display: block;/*  puts it on its own line */
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -160,10 +160,10 @@ colors:
   margin-inline-start: 0;
   margin-inline-end: 0;
   width: 175px;
-  line-height: 1.2; 
+  line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  color: #2f80ed; 
+  color: #2f80ed;
   margin: 0;
   padding: 0;
 }
@@ -318,7 +318,7 @@ colors:
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
-  margin: 0 auto 70px auto; 
+  margin: 0 auto 70px auto;
   display: block;
   position: relative; /* Allows me to put it in front of the feynman image */
   padding-top: 100px;
@@ -365,7 +365,7 @@ colors:
   border-style: none;
   position: absolute;
   bottom: 0;
-  left: 0; 
+  left: 0;
   width: 867px;
   height: 637px;
   z-index: 1; /* in front of the background, behind the text elements */
@@ -378,7 +378,7 @@ colors:
 
 .kaufman {
   /*overriding browser defaults: */
-  display: block; 
+  display: block;
   overflow: hidden;
   background-color: #1f1f1f;
   position: relative;
