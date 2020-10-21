@@ -1,20 +1,6 @@
 /* 
 
-!!!!!NOTE TO CODE REVIEWER:!!!!!
-Firstly, when I validated my CSS using the W3C validator, it was giving me errors for the chrome default styles
-margin-inline-start, margin-inline-end, margin-block-start, and margin-block-end. However chrome and firefox recognize these
-styles perfectly, so unless there's a functional issue with them that you know of, I'm choosing for now to leave them as they are. They are valid according to Chrome version 69 and Firefox 41, so I'm not sure
-what W3C is on about. 
-Secondly, I would really appreciate it if you could leave as many details as possible during the review if you're not too short on time.
-It would be really helpful to me. Thank you in advance for the review! 
-
 Notes for myself: 
-  - normalize.css doesn't reset margin/padding for certain text elements. Manually reset these at the block level. The project SHOULD NOT have any margin/padding values
-    inherited from browser defaults. 
-  - w3c throwing errors on default margin styles for some reason - ?
-  - be sure to check with firefox devtools to see if firefox has different default styles that I need to get rid of
-  - use h4 for all table-related titles
-  
  
 
 colors: 
@@ -23,19 +9,14 @@ colors:
   - blue (links, figures) #2f80ed;
   - black (text) #000;
 
-
 */
 
 
 .page {
   min-width: 1100px;
-  /* we don't know how to make mobile versions of websites yet, */
-  /* so here we've set a minimum page width */
   max-width: 1600px;
-  /* here we've set a maximum page width */
   margin: 0 auto;
   padding: 0; 
-  /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
   /* overriding browser defaults: */
   box-sizing: border-box;
@@ -44,13 +25,12 @@ colors:
 
 }
 
-/* header section code */
 .header {
   
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  position: relative; /* makes elements "see it" when setting absolute positioning  */
+  position: relative;
   display: flex;
   background-color: #f2f2f2;
 }
@@ -58,13 +38,12 @@ colors:
 .logo {
   /*overriding browser defaults: */
   border-style: none;
- /* need to set the specific size; this will be reused in the footer except with a different image */
+
   width: 154px;
   height: 31px;
 }
 
-.logo_place_header { /*  modifier for the header logo */ 
-  /* specific styles for the header version, including order, padding, positioning */
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -73,10 +52,6 @@ colors:
 
 .header__title {
   /*overriding browser defaults: */
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
   display: inline-block;
   width: 730px;
   align-self: center;
@@ -89,12 +64,9 @@ colors:
 .header__subtitle {
   /*overriding browser defaults: */
   display: block;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
+
   position: absolute;
-  z-index: 5; /* in front of everything else except for the logo */
+  z-index: 5;
   width: 388px;
   bottom: 30px;
   left: 64px;
@@ -108,7 +80,7 @@ colors:
   cursor: pointer;
   text-decoration: none;
   color: #2f80ed;
-  display: block;/*  puts it on its own line */
+  display: block;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -142,7 +114,7 @@ colors:
 .description {
   display: flex;
   justify-content: center;
-  padding-top: 100px; /* provides padding between sections */
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -155,10 +127,7 @@ colors:
 
 .two-columns__brief {
   /*overriding browser defaults: */
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
+
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
@@ -183,15 +152,12 @@ colors:
 .two-columns__paragraph {
   /* overriding browser defaults: */
   display: block;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
+
   margin: 0;
   padding: 0 0 30px 0;
 }
 
-.two-columns__paragraph:last-of-type { /* excludes the last paragraph from having the extra padding */
+.two-columns__paragraph:last-of-type {
   padding: 0;
 }
 
@@ -207,16 +173,13 @@ colors:
 /* Table / digits section code */
 .digits {
   display: block;
-  padding-bottom: 100px; /* bottom spacing for between sections */
+  padding-bottom: 100px;
 }
 
 .section-title {
   /* overriding browser defaults: */
   display: block;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
+
   margin: 0 auto 20px auto;
   width: 60%;
   text-align: center;
@@ -239,15 +202,11 @@ colors:
   font-size: 24px;
   font-weight: normal;
 }
-/* using ULs to make the whole thing instead of an actual table, table formatting turned out to be a nightmare */
 
 .table {
   /* overriding browser defaults: */
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  padding-inline-start: 0;
+
+ 
   margin: 0 auto;
   width: 1100px;
   display: flex;
@@ -264,16 +223,13 @@ colors:
   margin: 0 auto;
 }
 
-.table__cell_bottom {
-  margin-top: 60px;
+.table__cell:nth-child(-n+4) {
+  margin-bottom: 60px;
 }
 
 .table__heading {
   /* overriding browser defaults: */
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
+  margin: 0;
   display: block;
   margin-bottom: 20px;
   line-height: 1.15;
@@ -284,18 +240,11 @@ colors:
 .table__text {
   /* overriding browser defaults: */
   display: block;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
+
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-}
-
-.table__text_bottom {
-  /* add margin to push it away from the text above */
-  margin-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* end table code */
@@ -308,16 +257,12 @@ colors:
   display: block;
   height: 790px;
   background-color:#f2f2f2;
-  position: relative; /* is this required? in order to do z-index? I think yes */
-  /* z-index: -1;  */
+  position: relative;
 }
 
 .feynman__title {
   /* overriding browser defaults: */
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
+
   margin: 0 auto 70px auto;
   display: block;
   position: relative; /* Allows me to put it in front of the feynman image */
@@ -333,10 +278,7 @@ colors:
 .feynman__subtitle {
   /* overriding browser defaults: */
   display: block;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
+
   position: relative; /* Allows me to put it in front of the feynman image */
   margin: 0 auto;
   line-height: 51px;
@@ -362,13 +304,13 @@ colors:
 
 .feynman__image {
   /* overriding browser defaults: */
-  border-style: none;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 867px;
   height: 637px;
-  z-index: 1; /* in front of the background, behind the text elements */
+  z-index: 1;/* in front of the background, behind the text elements */
+  background-image: url("../images/feynman.png");
 }
 
 /* end Feynman section code */
@@ -390,7 +332,7 @@ colors:
   color: white;
   width: 60%;
   margin: 0 auto;
-  padding-top: 90px; /* is the padding supposed to be here or somewhere else to push the section upward? Does it actually matter where it goes?  */
+  padding-top: 90px;
   padding-bottom: 20px;
 }
 
@@ -401,25 +343,14 @@ colors:
   padding-bottom: 80px;
 }
 
-/* .table_theme_dark {
-} */
-
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   min-width: 200px;
 }
-/*
-.table__heading_theme_dark {
-  unnecessary??
-}
 
-.table__text_theme_dark {
-  unnecessary? 
-}
- */
-.table__cell_dark_bottom {
-  margin-top: 80px;
+.table__cell_theme_dark:nth-child(-n+5) {
+  margin-bottom: 80px;
 }
 
 .kaufman__triangle {
@@ -453,42 +384,27 @@ colors:
   height: 350px;
 }
 
+/* .footer__column {
+  doesn't seem to need any styles of its own
+} */
+
 .footer__column_content_copyright {
-  /* overriding browser defaults: */
   display: flex;
-  list-style-type: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  padding-inline-start: 0;
   flex-direction: column;
   justify-content: space-between;
   flex-basis: 711px;
 }
 
-.footer__logo_list-item {
-  /* holds the logo image, here in case I need to style this element */
-  /* overriding browser defaults: */
-  display: list-item;
-  text-align: left;
-}
-
 .logo_place_footer {
-  /* overriding browser defaults: */
-  border-style: none;
+  background-image: url(../images/logo_place_footer.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 183px;
   height: 35px;
-  /* DO NOT USE ABSOLUTE POSITIONING, USE FLEXBOX TO POSITION */
 }
 
 .footer__author {
-/* overriding browser defaults: */
   display: block;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
   text-align: left;
   line-height: 25px;
   font-size: 18px;
@@ -498,23 +414,12 @@ colors:
 }
 
 .footer__column_content_info {
-/* overriding browser defaults: */
   display: block;
-  list-style-type: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  padding-inline-start: 0;
 }
 
 .footer__column-heading {
-  /* overriding browser defaults: */
+  margin: 0;
   display: block;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
   text-align: left;
   line-height: 45px;
   font-size: 18px;
@@ -523,10 +428,9 @@ colors:
 }
 
 .footer__column-links {
-  /* overriding browser defaults: */
+  display: block;
   color: white;
   cursor: pointer;
-  display: list-item;
   text-align: left;
   text-decoration: none;
   line-height: 30px;
@@ -534,34 +438,27 @@ colors:
   font-weight: normal;
 }
 
+.footer__column-links:last-of-type {
+  padding-bottom: 16px;
+}
+
 .footer__column-links-text {
+  display: block;
+  padding-bottom: 16px;/* puts some spacing between them so they're not crammed together */
   color: white;
   text-decoration: none;
   cursor: pointer;
 }
 
-.footer__column_links-bottom {
-  padding-bottom: 16px;
-}
-
 .footer__column_content_social {
-/* overriding browser defaults:  */
-  list-style-type: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  padding-inline-start: 0;
   display: block;
 }
 
 .social-icon {
-  display: inline-block;
   width: 16px;
   height: 16px;
   padding-right: 10px;
 }
-
 
 /* end footer section code */
 
