@@ -1,3 +1,5 @@
+/* This modifier is imported directly into the top-level index.css file to ensure that its styles overwrite the block/element code. */
+
 .table__cell_theme_dark {
     width: 200px;
     color: white;
