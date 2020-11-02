@@ -1,0 +1,9 @@
+.feynman__image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 867px;
+    height: 637px;
+    z-index: 1;/* in front of the background, behind the text elements */
+    background-image: url("../../../images/feynman.png");
+}

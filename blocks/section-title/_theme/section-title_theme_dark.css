@@ -1,1 +1,7 @@
-/* this is a modifier! */
+.section-title_theme_dark {
+    color: white;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,7 @@
+.footer__column-links-text {
+    display: block;
+    padding-bottom: 16px;/* puts some spacing between them so they're not crammed together */
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}

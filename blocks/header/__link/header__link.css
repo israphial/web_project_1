@@ -1,0 +1,10 @@
+.header__link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #2f80ed;
+    display: block;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+}
+  

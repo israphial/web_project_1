@@ -1,0 +1,13 @@
+@import url(_theme/table__cell_theme_dark.css);
+
+.table__cell {
+    text-align: left;
+    display: list-item;
+    min-width: 250px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.table__cell:nth-child(-n+4) {
+    margin-bottom: 60px;
+}

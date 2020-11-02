@@ -1,1 +1,9 @@
-/* this is a modifier! */
+.table__cell_theme_dark {
+    width: 200px;
+    color: white;
+    min-width: 200px;
+}
+  
+.table__cell_theme_dark:nth-child(-n+5) {
+    margin-bottom: 80px;
+}
