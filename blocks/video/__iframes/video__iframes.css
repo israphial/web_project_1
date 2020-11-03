@@ -1,1 +1,8 @@
 /* holder for the two iframes */
+
+.video__iframes {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 0 auto;
+    padding: 0;
+}

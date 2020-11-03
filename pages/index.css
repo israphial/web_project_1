@@ -24,7 +24,8 @@ Those smaller css files will have @import rules for that block's element and mod
 @import url(../blocks/section-title/section-title.css);
 @import url(../blocks/social-icon/social-icon.css);
 @import url(../blocks/table/table.css);
-@import url(../blocks/table/__cell/_theme/table__cell_theme_dark.css); /* modifier being imported after block so that it falls after table in the cascade */
+@import url(../blocks/table/__cell/_theme/table__cell_theme_dark.css);/* modifier being imported after block so that it falls after table in the cascade */
+@import url(../blocks/table/_theme/table_theme_dark.css);/* modifier being imported after block so that it falls after table in the cascade */
 @import url(../blocks/two-columns/two-columns.css);
 @import url(../blocks/rotation/rotation.css);
 /* @import url(../blocks/); */
