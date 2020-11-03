@@ -13,7 +13,7 @@ Those smaller css files will have @import rules for that block's element and mod
 @import url(../blocks/oakley/oakley.css);
 @import url(../blocks/digits/digits.css);
 @import url(../blocks/feynman/feynman.css);
-@import url(../blocks/kahn/kahn.css);
+@import url(../blocks/khan/khan.css);
 @import url(../blocks/resources/resources.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/header/header.css);
