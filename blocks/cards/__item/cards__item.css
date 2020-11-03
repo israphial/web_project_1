@@ -1,0 +1,4 @@
+.cards__item {
+    border: 1px solid red;
+    margin-right: 100px; /* Temporary attempt to space elements out */
+}

@@ -1,0 +1,15 @@
+@import url(__description/cards__description.css);
+@import url(__image/cards__image.css);
+@import url(__item/cards__item.css);
+@import url(__title/cards__title.css);
+
+/* this is a ul that probably uses flex to display the cards. there is no sixth card and no centering required on the last 2 cards. */
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 960px;
+    margin: 0 auto;
+}

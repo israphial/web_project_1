@@ -1,6 +1,7 @@
 .header__square-pic {
   display: block;
   position: absolute;
+  transform: rotate(-15deg);
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
