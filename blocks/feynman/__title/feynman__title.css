@@ -1,7 +1,7 @@
 .feynman__title {
     margin: 0 auto 70px auto;
     display: block;
-    position: relative; /* Allows me to put it in front of the feynman image */
+    position: relative;
     padding-top: 100px;
     line-height: 1.15;
     font-size: 120px;
