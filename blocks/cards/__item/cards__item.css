@@ -1,6 +1,5 @@
 .cards__item {
-    /* border: 1px solid red;    --uncomment for debugging if needed */
-    margin-right: 100px; /* Temporary attempt to space elements out */
+    margin-right: 100px;
     width: 240px;
     min-width: 240px;
 }

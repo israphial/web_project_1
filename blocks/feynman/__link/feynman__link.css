@@ -9,4 +9,11 @@
     z-index: 3;
     top: 50%;
     right: 48px;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.feynman__link:hover {
+    opacity: 0.5;
 }
