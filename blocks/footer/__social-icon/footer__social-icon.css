@@ -1,0 +1,5 @@
+.footer__social-icon {
+    width: 16px;
+    height: 16px;
+    padding-right: 10px; /* Marina: The brief shows that the social icons are pushed a bit away from the link text, even though it doesn't explicitly ask for spacing, so I put this here for that reason. */
+}

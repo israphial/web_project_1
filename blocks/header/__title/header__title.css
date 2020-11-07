@@ -1,5 +1,7 @@
 .header__title {
   display: inline-block;
+  position: relative;
+  z-index: 1;
   width: 730px;
   align-self: center;
   line-height: 96px;

@@ -16,7 +16,6 @@
 @import url(../blocks/page/page.css);
 @import url(../blocks/section-subtitle/section-subtitle.css);
 @import url(../blocks/section-title/section-title.css);
-@import url(../blocks/social-icon/social-icon.css);
 @import url(../blocks/table/table.css);
 @import url(../blocks/table/__cell/_theme/table__cell_theme_dark.css);/* modifier being imported after block so that it falls after table in the cascade */
 @import url(../blocks/table/_theme/table_theme_dark.css);/* modifier being imported after block so that it falls after table in the cascade */

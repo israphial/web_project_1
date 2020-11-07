@@ -3,9 +3,5 @@
     display: list-item;
     min-width: 250px;
     width: 250px;
-    margin: 0 auto;
-}
-
-.table__cell:nth-child(-n+4) {
-    margin-bottom: 60px;
+    margin: 60px auto 0 auto;
 }
