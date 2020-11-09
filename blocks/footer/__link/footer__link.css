@@ -1,0 +1,13 @@
+.footer__link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.footer__link:hover {
+    opacity: 0.5;
+}
